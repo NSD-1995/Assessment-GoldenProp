@@ -14,6 +14,8 @@ contract HomeTransaction {
         Rejected }
     ContractState public contractState = ContractState.WaitingSellerSignature;
 
+    event DepositRefunded(address indexed beneficiary, uint256 amount);
+
 
     // Roles acting on contract
     address payable public realtor;
@@ -113,7 +115,7 @@ contract HomeTransaction {
 
         contractState = ContractState.Rejected;
 
-        seller.transfer(deposit-realtorFee);
-        realtor.transfer(realtorFee);
+        emit DepositRefunded(buyer, deposit);
+        buyer.transfer(deposit);
     }
 }
