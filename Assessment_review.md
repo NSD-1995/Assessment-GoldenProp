@@ -158,7 +158,7 @@ The assessment involved reviewing the backend application, smart contracts, test
 npm run test:contracts
 ```
 
-**Result:** ✅ Contract tests passed successfully.
+**Result:**  Contract tests passed successfully.
 
 ---
 
@@ -168,7 +168,7 @@ npm run test:contracts
 node -e "require('./server/controllers/auth.controller')"
 ```
 
-**Result:** ✅ Authentication controller loaded successfully.
+**Result:**  Authentication controller loaded successfully.
 
 ---
 
@@ -178,7 +178,7 @@ node -e "require('./server/controllers/auth.controller')"
 npm run build
 ```
 
-**Result:** ✅ Project compiled successfully.
+**Result:**  Project compiled successfully.
 
 ---
 
